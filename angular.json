@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "Compendium"
+  "defaultProject": "Compendium",
+  "cli": {
+    "analytics": "f7e01597-ac2c-423f-b150-7e45e0e15476"
+  }
 }
