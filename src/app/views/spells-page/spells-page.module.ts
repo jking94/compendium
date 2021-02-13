@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { spellsPageRoutes } from './spells-page.routing';
 import { MatButtonModule } from '@angular/material/button';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -15,7 +17,12 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     RouterModule.forChild(spellsPageRoutes),
-    MatButtonModule
+    MatButtonModule,
+    BrowserModule,
+    HttpClientModule
+  ],
+  providers: [
+    HttpClient
   ]
 })
 export class SpellsPageModule { }
