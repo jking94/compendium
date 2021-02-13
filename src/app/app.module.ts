@@ -9,7 +9,7 @@ import { HomePageModule } from './views/home-page/home-page.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     SpellsPageModule,
