@@ -2,4 +2,24 @@
 :host {
     display: grid;
     grid-template-columns: 1fr;
+
+    .page-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        .spell-tile {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            width: fit-content;
+            min-width: 200px;
+            height: 100px;
+            background-color: orange;
+
+            .spell-text {
+            }
+        }
+    }
 }

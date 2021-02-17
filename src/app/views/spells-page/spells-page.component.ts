@@ -8,6 +8,7 @@ import { SpellsService } from 'src/app/Services/spells.service';
 })
 export class SpellsPageComponent implements OnInit {
   public allSpells: any[] = [];
+  public selectedSpell: any;
 
   constructor(
     private spellsService: SpellsService
@@ -17,8 +18,11 @@ export class SpellsPageComponent implements OnInit {
     this.spellsService.getSpells()
     .subscribe((data) => {
       this.allSpells = data.results;
-      console.log(this.allSpells);
     });
+  }
+
+  selectSpell(spell: any){
+    console.log(spell);
   }
 
 }

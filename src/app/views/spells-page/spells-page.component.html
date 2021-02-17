@@ -1,2 +1,6 @@
 <app-home-button></app-home-button>
-<div *ngFor="let spell of allSpells">{{spell.name}}</div>
+<div class="page-content">
+  <div class="spell-tile" *ngFor="let spell of allSpells" (click)="selectSpell(spell)">
+    <span class="spell-text">{{spell.name}}</span>
+  </div>
+</div>
