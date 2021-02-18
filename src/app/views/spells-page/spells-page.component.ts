@@ -24,8 +24,7 @@ export class SpellsPageComponent implements OnInit {
   }
 
   selectSpell(spell: any){
-    this.router.navigate(['/spell-detail'], { queryParams: { spellurl: spell.url } });
-    // this.router.navigate(['/products'], { queryParams: { order: 'popular' } });
+    this.router.navigate([`/spell-detail`], { queryParams: { spellurl: spell.url } });
   }
 
 }

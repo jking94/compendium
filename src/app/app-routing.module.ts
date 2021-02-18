@@ -12,7 +12,7 @@ const routes: Routes = [
     loadChildren: () => import('./views/spells-page/spells-page.module').then(m => m.SpellsPageModule)
   },
   {
-    path: 'spell-detail/:spellurl',
+    path: 'spell-detail',
     loadChildren: () => import('./views/spell-detail-page/spell-detail-page.module').then(m => m.SpellDetailPageModule)
   }
 ];

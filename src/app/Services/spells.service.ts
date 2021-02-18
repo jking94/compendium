@@ -16,7 +16,7 @@ export class SpellsService {
     return this.http.get<any>(`${this.ROOT_URL}/api/spells`);
   }
 
-  getSpell(spellUrl: string): Observable<any | HttpErrorResponse> {
+  getSpellDetail(spellUrl: string): Observable<any | HttpErrorResponse> {
     return this.http.get<any>(`${this.ROOT_URL}${spellUrl}`);
   }
 }
