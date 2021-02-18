@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { spellsPageRoutes } from './spells-page.routing';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -18,7 +17,6 @@ import { BrowserModule } from '@angular/platform-browser';
     CommonModule,
     RouterModule.forChild(spellsPageRoutes),
     MatButtonModule,
-    BrowserModule,
     HttpClientModule
   ],
   providers: [

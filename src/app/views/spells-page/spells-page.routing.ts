@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 
 export const spellsPageRoutes : Routes = [
     {
-        path: 'spells',
+        //path: '',
         component: SpellsPageComponent
     }
 ];
