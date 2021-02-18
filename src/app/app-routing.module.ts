@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'spells',
     loadChildren: () => import('./views/spells-page/spells-page.module').then(m => m.SpellsPageModule)
+  },
+  {
+    path: 'spell-detail',
+    loadChildren: () => import('./views/spell-detail-page/spell-detail-page.module').then(m => m.SpellDetailPageModule)
   }
 ];
 
