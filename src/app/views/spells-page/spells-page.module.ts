@@ -16,8 +16,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     RouterModule.forChild(spellsPageRoutes),
-    MatButtonModule,
-    HttpClientModule
+    MatButtonModule
   ],
   providers: [
     HttpClient
