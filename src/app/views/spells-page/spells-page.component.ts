@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SpellsService } from 'src/app/Services/spells.service';
 
 @Component({
@@ -11,18 +12,20 @@ export class SpellsPageComponent implements OnInit {
   public selectedSpell: any;
 
   constructor(
-    private spellsService: SpellsService
+    private spellsService: SpellsService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
     this.spellsService.getSpells()
-    .subscribe((data) => {
-      this.allSpells = data.results;
+    .subscribe((allSpells) => {
+      this.allSpells = allSpells.results;
     });
   }
 
   selectSpell(spell: any){
-    console.log(spell);
+    this.router.navigate(['/spell-detail'], { queryParams: { spellurl: spell.url } });
+    // this.router.navigate(['/products'], { queryParams: { order: 'popular' } });
   }
 
 }
