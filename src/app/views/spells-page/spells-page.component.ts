@@ -23,7 +23,7 @@ export class SpellsPageComponent implements OnInit {
     });
   }
 
-  selectSpell(spell: any){
+  selectSpell(spell: any) {
     this.router.navigate([`/spell-detail`], { queryParams: { spellurl: spell.url } });
   }
 
