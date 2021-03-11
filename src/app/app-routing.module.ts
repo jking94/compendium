@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'spell-detail',
     loadChildren: () => import('./views/spell-detail-page/spell-detail-page.module').then(m => m.SpellDetailPageModule)
+  },
+  {
+    path: 'bestiary',
+    loadChildren: () => import('./views/bestiary-page/bestiary-page.module').then(m => m.BestiaryPageModule)
   }
 ];
 
