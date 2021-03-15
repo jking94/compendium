@@ -1,1 +1,5 @@
-<p>bestiary-page works!</p>
+<div class="page-content">
+    <div class="beast-tile" *ngFor="let beast of allBeasts" (click)="selectBeast(beast)">
+      <span class="beast-text">{{beast.name}}</span>
+    </div>
+  </div>

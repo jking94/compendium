@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'bestiary',
     loadChildren: () => import('./views/bestiary-page/bestiary-page.module').then(m => m.BestiaryPageModule)
+  },
+  {
+    path: 'beast-detail',
+    loadChildren: () => import('./views/beast-detail-page/beast-detail-page.module').then(m => m.BeastDetailPageModule)
   }
 ];
 

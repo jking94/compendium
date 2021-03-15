@@ -20,12 +20,11 @@ export class BestiaryPageComponent implements OnInit {
     this.bestiaryService.getBeasts()
     .subscribe((allBeasts) => {
       this.allBeasts = allBeasts.results;
-      console.log(allBeasts)
     });
   }
 
   selectBeast(beast: any) {
-    //this.router.navigate([`/beast-detail`])
+    this.router.navigate([`/beast-detail`], { queryParams: {beasturl: beast.url } });
   }
 
 
